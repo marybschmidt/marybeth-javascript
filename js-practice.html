@@ -39,11 +39,36 @@
     let lastName = 'Schmidt';
 
     let name = firstName + " " + middleName + " " + lastName;
-    console.log(name)
+    console.log(name);
 
     //String On My Own
     let hello = 'My name is';
-    let greeting = hello + " " + name; console.log(greeting)
+    let greeting = hello + " " + name; console.log(greeting);
+
+    console.log("Using Functions");
+
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+
+    console.log(makeSquare(3));
+    console.log(makeSquare(34));
+    console.log(makeSquare(345));
+
+    let squareOf21 = makeSquare(21);
+    console.log(squareOf21);
+
+    function makeFullname(first,middle,last) {
+      let fullName = first + " " + middle + " " + last;
+      return fullName;
+    }
+
+    let fullNameReturn = makeFullname("Mary", "Liz", "Schmidt");
+    console.log(fullNameReturn.toUpperCase());
+
+    console.log(makeFullname("Lillian","Marie","Ledyard"));
+    console.log(makeFullname("Robert","'Beto'","O'Rourke"));
 
     /*
     FYI that this is a comment, too
